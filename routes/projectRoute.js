@@ -1,6 +1,6 @@
 const express = require("express");
 let router = express.Router();
-let contoller = require("../controller");
+let controller = require("../controller");
 
 router.get('/', (req, res) => {
     controller.projectController.retrieveProject(req, res);
