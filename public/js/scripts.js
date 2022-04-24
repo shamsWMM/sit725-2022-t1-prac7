@@ -4,7 +4,7 @@ const clickMe = () => {
 
 const addProjectToApp = (project) => {
     $.ajax({
-        url: '/api/projects',
+        url: '/api/project',
         data: project,
         type: 'POST',
         success: (result) => {
@@ -13,7 +13,6 @@ const addProjectToApp = (project) => {
         }
     })
 }
-
 
 const submitForm = () => {
     let formData = {};
@@ -24,10 +23,9 @@ const submitForm = () => {
 
     console.log("Form Data Submitted: ", formData);
     addProjectToApp(formData);
-
 }
-const getProjects = () => {
-    $.get("/api/projects",(response) => {
+const getProject = () => {
+    $.get("/api/project",(response) => {
         if(response.statusCode==200){
             console.log(response)
             addCards(response.data);
@@ -37,7 +35,6 @@ const getProjects = () => {
         }
     })
 }
-
 
 const addCards = (items) => {
     items.forEach(item => {
@@ -53,15 +50,11 @@ const addCards = (items) => {
     });
 }
 
-
-
 $(document).ready(function(){
     $('.materialboxed').materialbox();    
     $('#formSubmit').click(()=>{
         submitForm();
     })
-    getProjects();
+    getProject();
     $('.modal').modal();
-    
   });
-  

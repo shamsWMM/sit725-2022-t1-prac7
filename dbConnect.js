@@ -6,11 +6,10 @@ const client = new MongoClient(uri,{ useNewUrlParser: true })
 
 client.connect((err,db) => {
      if(!err){
-       console.log('Database Connected')
+       console.log("Database Connected");
      }else{
-       console.log('[error]',err)
+       console.log("[error]",err);
      }
  });
  
-
 exports.mongoClient = client;
