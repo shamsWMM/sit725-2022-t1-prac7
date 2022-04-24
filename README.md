@@ -3,8 +3,8 @@ Week 6 Practical on Testing
 
 IMPORTANT!!!!!!!!!!!
 
-Please create a .env file in order for the final test to function
-in the .env file write the following two lines:
+Please create a .env file in order for the last test to function!!!!
+Define the following variables in the .env file:
 
-MONGO_USER=admin
-MONGO_PASSWORD=admin
+MONGO_USER=
+MONGO_PASSWORD=
