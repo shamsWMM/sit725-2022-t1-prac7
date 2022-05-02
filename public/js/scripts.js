@@ -49,6 +49,11 @@ const addCards = (items) => {
       $("#card-section").append(itemToAppend)
     });
 }
+let socket = io();
+
+ socket.on('number', (msg) => {
+     $("#heading").html("Welcome to SIT 725 Week 7: "+ msg)
+ })
 
 $(document).ready(function(){
     $('.materialboxed').materialbox();    
