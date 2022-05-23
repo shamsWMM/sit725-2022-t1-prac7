@@ -24,10 +24,13 @@
   "dependencies": {
     "chai": "^4.3.6",
     "cors": "^2.8.5",
+    "daemon": "^1.1.0",
+    "docker": "^1.0.0",
     "dotenv": "^16.0.0",
     "express": "^4.17.3",
     "mocha": "^9.2.2",
     "mongodb": "^4.5.0",
+    "nodemon": "^2.0.16",
     "request": "^2.88.2",
     "socket.io": "^2.4.1"
   }
